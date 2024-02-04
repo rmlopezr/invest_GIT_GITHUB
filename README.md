@@ -125,3 +125,51 @@ _   guion bajo
 .   punto
 !   signo de exclamación
 ```
+# MagicCells
+Las celdas de código del Jupyter NoteBook pueden contener comandos especiales que no son código Python válido, pero afectarán el comportamiento del cuaderno.
+## %matplotlib inline
+Es uno de los mas populares comando :
+```bash
+%matplotlib inline
+```
+El uso de este comando al inicio de un Jupyter NoteBook producirá gráficos matplotlib en línea en las celdas del cuaderno. Sin %matplotlib en línea, los gráficos aparecerán como ventanas externas. Un comienzo típico para un cuaderno Jupyter usando matplotlib es:
+```bash
+import numpy as np
+import matplotlib.pyplot as plt
+%matplotlib inline
+```
+###%load
+El comando %load llamara un modulo de Python, webpage o archivo dentro de un Jupyter notebook
+```bash
+# %load hello.py
+def main():
+    print('This code was run from a seperate Python file')
+    print('Hello from the file hello.py')
+
+if name == "main":
+    main()
+```
+### %run
+El comando %run seguido de un nombre de un archivo Python, ejecutara el archivo como script. 
+```bash
+| current_folder
+---| notebook.ipynb
+---| hello.py
+```
+```bash
+%run hello.py
+```
+### Otros comandos usados
+```bash
+%pwd
+print the current working directory
+
+%cd
+change the current working directory
+
+%ls
+list the contents of the current directory
+
+%history
+the history of the In [ ]: commands
+```
