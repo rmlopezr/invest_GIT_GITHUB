@@ -83,7 +83,7 @@ Las listas ordenads usan numeros seguidas de puntos:
 ```
 ### ÉNFASIS
 
-Markdown trata los asteriscos (*) y los guiones bajos () como indicadores de énfasis. El texto envuelto con uno * o _ se envolverá con una etiqueta HTML <em>; los dobles * ’o ’s se envolverán con una etiqueta HTML <strong>. Por ejemplo, esta entrada:
+Markdown trata los asteriscos y los guiones bajos como indicadores de énfasis. 
 
 ```bash
 *single asterisks*
@@ -93,4 +93,35 @@ _single underscores_
 **double asterisks**
 
 __double underscores__
+```
+### IMÁGENES
+
+Markdown utiliza una sintaxis de imagen que pretende parecerse a la sintaxis de los enlaces, lo que permite dos estilos: en línea y de referencia.
+
+La sintaxis de la imagen en línea se ve así:
+
+```bash
+![Alt text](/path/to/img.jpg)
+
+![Alt text](/path/to/img.jpg "Optional title")
+```
+### ESCAPE DE BARRA INVERTIDA
+Markdown le permite usar escapes de barra invertida para generar caracteres literales que de otro modo tendrían un significado especial en la sintaxis de formato de Markdown. 
+```bash
+\*literal asterisks\*
+```
+Markdown proporciona escapes de barra invertida para los siguientes caracteres:
+```bash
+\   barra invertida
+`   retroceso
+*   asterisco
+_   guion bajo
+{}  llaves
+[]  corchetes
+()  paréntesis
+#   símbolo de hash
++   signo más
+-   signo menos (guión)
+.   punto
+!   signo de exclamación
 ```
