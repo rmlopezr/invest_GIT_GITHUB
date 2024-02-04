@@ -22,3 +22,9 @@ __Texto en negrita__
 ___Texto en cursiva y negrita___
 
 ~~Este texto está tachado.~~ Pero este no.
+
+This is an H1
+=============
+
+This is an H2
+-------------
