@@ -20,3 +20,5 @@ _Texto en cursiva_
 __Texto en negrita__
 ***Texto en cursiva y negrita***
 ___Texto en cursiva y negrita___
+
+~~Este texto está tachado.~~ Pero este no.
