@@ -138,7 +138,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 %matplotlib inline
 ```
-###%load
+## %load
 El comando %load llamara un modulo de Python, webpage o archivo dentro de un Jupyter notebook
 ```bash
 # %load hello.py
@@ -149,7 +149,7 @@ def main():
 if name == "main":
     main()
 ```
-### %run
+## %run
 El comando %run seguido de un nombre de un archivo Python, ejecutara el archivo como script. 
 ```bash
 | current_folder
@@ -159,7 +159,7 @@ El comando %run seguido de un nombre de un archivo Python, ejecutara el archivo 
 ```bash
 %run hello.py
 ```
-### Otros comandos usados
+## Otros comandos usados
 ```bash
 %pwd
 print the current working directory
