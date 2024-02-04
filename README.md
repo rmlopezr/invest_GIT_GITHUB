@@ -11,3 +11,12 @@ GitHub también fomenta una participación más amplia en proyectos Código Abie
 Al igual que HTML o LaTeX, Markdown es un lenguaje de marcado, pero, a diferencia de estos, pretende ofrecer la máxima facilidad de lectura al usuario. Sus comandos de formateado no son abstractos, sino cercanos al significado real. Se entiende mejor con un ejemplo: en HTML, para enfatizar una palabra en negrita, se utilizan las etiquetas '<b>' o '<strong>'.
 
 <p>Esta <b>palabra</b> va en negrita y esta <strong>también</strong></p>
+Esta \textbf{palabra} va en negrita.
+Esta **palabra** va en negrita.
+
+*Texto en cursiva*
+_Texto en cursiva_
+**Texto en negrita**
+__Texto en negrita__
+***Texto en cursiva y negrita***
+___Texto en cursiva y negrita___
