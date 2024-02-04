@@ -8,23 +8,89 @@ GitHub también fomenta una participación más amplia en proyectos Código Abie
 
 # Markdown y sus comandos
 ## ¿Para qué se utiliza Markdown?
-Al igual que HTML o LaTeX, Markdown es un lenguaje de marcado, pero, a diferencia de estos, pretende ofrecer la máxima facilidad de lectura al usuario. Sus comandos de formateado no son abstractos, sino cercanos al significado real. Se entiende mejor con un ejemplo: en HTML, para enfatizar una palabra en negrita, se utilizan las etiquetas '<b>' o '<strong>'.
+Al igual que HTML o LaTeX, Markdown es un lenguaje de marcado, pero, a diferencia de estos, pretende ofrecer la máxima facilidad de lectura al usuario. Sus comandos de formateado no son abstractos, sino cercanos al significado real. 
 
-<p>Esta <b>palabra</b> va en negrita y esta <strong>también</strong></p>
-Esta \textbf{palabra} va en negrita.
-Esta **palabra** va en negrita.
+## Comandos
 
-*Texto en cursiva*
-_Texto en cursiva_
-**Texto en negrita**
-__Texto en negrita__
-***Texto en cursiva y negrita***
-___Texto en cursiva y negrita___
+### ENCABEZADOS
+Markdown admite dos estilos de encabezados, Setext y atx.
 
-~~Este texto está tachado.~~ Pero este no.
-
+```bash
 This is an H1
 =============
 
 This is an H2
 -------------
+```
+
+Los encabezados de estilo Atx usan 1-6 caracteres hash al comienzo de la línea, correspondientes a los niveles de encabezado 1-6.
+
+```bash
+# This is an H1
+
+## This is an H2
+
+###### This is an H6
+```
+
+### CITAS EN BLOQUE
+Markdown utiliza caracteres de estilo de correo electrónico > para comillas en bloque. Si está familiarizado con citar pasajes de texto en un mensaje de correo electrónico, entonces sabe cómo crear una cita en bloque en Markdown. Se ve mejor si ajusta firmemente el texto y pone un > antes de cada línea.
+
+Las citas en bloque se pueden anidar (es decir, una cita en bloque en una cita en bloque) agregando niveles adicionales de >:
+
+```bash
+> This is the first level of quoting.
+>
+> > This is nested blockquote.
+>
+> Back to the first level.
+```
+
+Las citas en bloque pueden contener otros elementos de Markdown, incluidos encabezados, listas y bloques de código:
+
+```bash
+> ## This is a header.
+> 
+> 1.   This is the first list item.
+> 2.   This is the second list item.
+> 
+> Here's some example code:
+> 
+>     return shell_exec("echo $input | $markdown_script");
+```
+
+### LISTAS
+Markdown admite listas ordenadas (numeradas) y no ordenadas (con viñetas).
+
+Las listas desordenadas utilizan asteriscos, más y guiones - de manera intercambiable - como marcadores de lista:
+
+```bash
+*   Red
+*   Green
+*   Blue
+```
+es equivalente a:
+```bash
++   Red
++   Green
++   Blue
+```
+Las listas ordenads usan numeros seguidas de puntos:
+```bash
+1.  Bird
+2.  McHale
+3.  Parish
+```
+### ÉNFASIS
+
+Markdown trata los asteriscos (*) y los guiones bajos () como indicadores de énfasis. El texto envuelto con uno * o _ se envolverá con una etiqueta HTML <em>; los dobles * ’o ’s se envolverán con una etiqueta HTML <strong>. Por ejemplo, esta entrada:
+
+```bash
+*single asterisks*
+
+_single underscores_
+
+**double asterisks**
+
+__double underscores__
+```
